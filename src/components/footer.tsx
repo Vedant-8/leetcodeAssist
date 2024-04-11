@@ -4,16 +4,16 @@ import Paper from "@mui/material/Paper";
 const Footer = () => {
   return (
     <Paper
-      elevation={3}
-      square
+      component="div"
       sx={{
-        position: "bottom",
-        bottom: 0,
-        width: "100%",
-        height: "50px",
-        backgroundColor: "#D1CCFF",
-        textAlign: "center",
-        lineHeight: "50px", // Centering content vertically
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexGrow: 1,
+        backgroundColor: "#000000",
+        color: "#ffffff",
+        fontSize: "1rem",
+        padding: 2,
       }}
     >
       © {new Date().getFullYear()} Made by Vedant Kulkarni. All rights reserved.

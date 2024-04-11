@@ -4,15 +4,28 @@ import SolvedQ from "@/components/solvedQ";
 import UnsolvedQ from "@/components/unsolvedQ";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import "./globals.css";
 
 const home = () => {
   return (
     <>
-      <Navbar />
-      <DailyQ />
-      <SolvedQ />
-      <UnsolvedQ />
-      <Footer />
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <div className="container">
+        <div className="question">
+          <DailyQ />
+        </div>
+        <div className="question">
+          <SolvedQ />
+        </div>
+        <div className="question">
+          <UnsolvedQ />
+        </div>
+      </div>
+      <div className="footer">
+        <Footer />
+      </div>
     </>
   );
 };

@@ -16,7 +16,13 @@ const DailyQ = async () => {
   const { title, likes, dislikes, difficulty, hints, content } = question;
 
   return (
-    <Card variant="outlined" sx={{ borderRadius: 4, bgcolor: "#FFFDCC" }}>
+    <Card
+      variant="outlined"
+      sx={{
+        borderRadius: 4,
+        bgcolor: "#fcfced",
+      }}
+    >
       <CardContent>
         <Typography variant="h5" component="h2">
           Daily Question!

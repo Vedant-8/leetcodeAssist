@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 
 const Navbar = () => {
   return (
-    <AppBar position="static" sx={{ bgcolor: "#FFD5CC" }}>
+    <AppBar position="static" sx={{ bgcolor: "#000000" }}>
       <Toolbar>
         <Typography
           variant="h6"
@@ -13,8 +13,9 @@ const Navbar = () => {
           sx={{
             flexGrow: 1,
             fontWeight: "bold",
+            fontFamily: "sans-serif",
+            fontSize: "1.5rem",
             paddingLeft: 2,
-            color: "black",
           }}
         >
           LeetcodeAssist
